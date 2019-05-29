@@ -24,7 +24,14 @@ This allows us to setup a Dockerfile on your local computer that creates a conta
 
     * You should be able to find search application by searching in your start menu search on Windows or by opening a spotlight search on a mac by hitting ⌘ + spacebar or clicking on the magnifying glass at the top of your screen
 
-docker.io/mgardi/easemeintocrypto
+2. Run a docker container based on mgardi/easemeintocrypto. Type the following into your command prompt or terminal
+    ```docker run -p 4000:8888 mgardi/easemeintocrypto
+    ```
+3. Visit http://localhost:4000/ on your browser
+
+    *this container is using the jupyter/minimal-notebook which sets up the jupyter server to listen at port 8888 within the container. We are binding binding port 8888 inside the container and exposing it at port 4000*
+
+4. Use the token printed on start up (should be in string that ends with :8888/?token=e4ba09c2eca9a0ae5febf69c5f64e5e24b090aea667ee8e8) to login. Copy and paste the token after the = sign for login.
 
 ## Step 2: Option 2. Create a Dockerfile
 
@@ -73,5 +80,17 @@ Let's start by creating a file to save our project in
     ```
     on Mac
 
+7. Build a docker image by running
+    ```docker build --tag=easemeintocrypto .
+    ```
+
+8. Run the docker container
+    ```docker run -p 4000:8888 easemeintocrypto
+    ```
+    *this container is using the jupyter/minimal-notebook which sets up the jupyter server to listen at port 8888 within the container. We are binding binding port 8888 inside the container and exposing it at port 4000*
+
+9. Visit http://localhost:4000/ on your browser
+
+10. Use the token printed on start up (should be in string that ends with :8888/?token=e4ba09c2eca9a0ae5febf69c5f64e5e24b090aea667ee8e8) to login. Copy and paste the token after the = sign for login.
 
 Key Docker commands
