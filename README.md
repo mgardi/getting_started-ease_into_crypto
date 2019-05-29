@@ -22,7 +22,7 @@ This allows us to setup a Dockerfile on your local computer that creates a conta
 
 1. Open a command prompt (Windows) or terminal (Mac) application.
 
-    * You should be able to find search application by searching in your start menu search on Windows or by opening a spotlight search on a mac by hitting ⌘ + spacebar or clicking on the magnifying glass at the top of your screen
+    * You should be able to find command prompt or terminal application by searching in your start menu search on Windows or by opening a spotlight search on a mac by hitting ⌘ + spacebar or clicking on the magnifying glass at the top right of your screen
 
 2. Run a docker container based on mgardi/easemeintocrypto. Type the following into your command prompt or terminal
     ```docker run -p 4000:8888 mgardi/easemeintocrypto
