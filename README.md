@@ -25,7 +25,8 @@ This allows us to setup a Dockerfile on your local computer that creates a conta
     * You should be able to find command prompt or terminal application by searching in your start menu search on Windows or by opening a spotlight search on a mac by hitting ⌘ + spacebar or clicking on the magnifying glass at the top right of your screen
 
 2. Run a docker container based on mgardi/easemeintocrypto. Type the following into your command prompt or terminal
-    ```docker run -p 4000:8888 mgardi/easemeintocrypto
+    ```
+    docker run -p 4000:8888 mgardi/easemeintocrypto
     ```
 3. Visit http://localhost:4000/ on your browser
 
@@ -44,48 +45,58 @@ Let's start by creating a file to save our project in
 
 2. Check where in the file directory you are by typing or copy pasting
 
-    ```cd
+    ```
+    cd
     ```
     on Windows or
 
-    ```pwd
+    ```
+    pwd
     ```
     on Mac
 
     Into the command prompt or terminal window. This is where we will create and save our project folder and dockerfile
 
 3. Optional: You should be in your home directory when the terminal window opens but you can always used. Type:
-    ``` cd C:\<specify-your-path>
+    ```
+    cd C:\<specify-your-path>
     ```
     on Windows or
 
-    ``` cd /<specify-your-path>
+    ```
+    cd /<specify-your-path>
     ```
     on mac
 
     To specify the path where you would like to save a file (replace <specify-your-path> with wherever you want to save)
 
 4. Create a project folder by typing:
-    ```mkdir easemeintocrypto
+    ```
+    mkdir easemeintocrypto
     ```
 5. Change directories into folder we just created by typing:
-    ```cd easemeintocrypto
+    ```
+    cd easemeintocrypto
     ```
 6. Create the Dockerfile
-    ```edit Dockerfile
+    ```
+    edit Dockerfile
     ```
     on Windows or
 
-    ```nano Dockerfile
+    ```
+    nano Dockerfile
     ```
     on Mac
 
 7. Build a docker image by running
-    ```docker build --tag=easemeintocrypto .
+    ```
+    docker build --tag=easemeintocrypto .
     ```
 
 8. Run the docker container
-    ```docker run -p 4000:8888 easemeintocrypto
+    ```
+    docker run -p 4000:8888 easemeintocrypto
     ```
     *this container is using the jupyter/minimal-notebook which sets up the jupyter server to listen at port 8888 within the container. We are binding binding port 8888 inside the container and exposing it at port 4000*
 
