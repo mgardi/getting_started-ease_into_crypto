@@ -105,3 +105,18 @@ Let's start by creating a file to save our project in
 10. Use the token printed on start up (should be in string that ends with :8888/?token=e4ba09c2eca9a0ae5febf69c5fyoursisdifferent) to login. Copy and paste the token after the = sign for login.
 
 Key Docker commands
+
+
+## Credit 
+
+Walkthroughs are based on the work of Ellie Daw excellent work in "Ease Me Into Cryptography" series puplished on The Ethical Hacker Network
+
+Quick links to orginal Content:
+
+https://www.ethicalhacker.net/features/root/ease-me-into-cryptography-part-1-buzzwords-and-hash-function/
+
+https://www.ethicalhacker.net/features/root/ease-me-into-cryptography-part-2-symmetric-ciphers/
+
+https://www.ethicalhacker.net/features/root/ease-me-into-cryptography-part-3-asymmetric-ciphers/
+
+https://www.ethicalhacker.net/features/root/ease-me-into-cryptography-part-4-tls/
