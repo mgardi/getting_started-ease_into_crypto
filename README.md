@@ -102,6 +102,6 @@ Let's start by creating a file to save our project in
 
 9. Visit http://localhost:4000/ on your browser
 
-10. Use the token printed on start up (should be in string that ends with :8888/?token=e4ba09c2eca9a0ae5febf69c5f64e5e24b090aea667ee8e8) to login. Copy and paste the token after the = sign for login.
+10. Use the token printed on start up (should be in string that ends with :8888/?token=e4ba09c2eca9a0ae5febf69c5fyoursisdifferent) to login. Copy and paste the token after the = sign for login.
 
 Key Docker commands
